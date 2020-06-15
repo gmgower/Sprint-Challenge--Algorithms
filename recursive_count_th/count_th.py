@@ -21,8 +21,8 @@ def count_th(word):
         return 0
     if word[0:2] == 'th': # firt 2 letter match add 1 and recurse through word removing indices
         return count_th(word[1:]) + 1
-    else: 
+    else: # doesn't match recurse remove [0] index
         return count_th(word[1:])
 
-    
+print(count_th("yuithth"))
  
